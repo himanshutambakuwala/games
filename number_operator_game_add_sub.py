@@ -16,9 +16,11 @@ class bcolors:
 
 ops = { "+": operator.add,
         "-": operator.sub }
+        
 consecutive_correct = 0
 msg = "Lets See if you can solve this"
 success_message = ["YooHooooooo!!!","Rocking!!!","Excellent","Brilliant","You are on a roll","WOW","OH MY GOD"]
+
 print(bcolors.HEADER + f"{msg}".center(50) + bcolors.ENDC)
 while(consecutive_correct<5):
     number1 = random.randint(0,99)
